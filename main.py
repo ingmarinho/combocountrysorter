@@ -26,7 +26,7 @@ if not path.exists(os.path.dirname(__file__) + '\\combos'):
 def sortCombos(combo):
     for domain in domains:
         if domain in combo.lower():
-            with open("./combos/" + domains[domain] + "_COMBOS" + ".txt", 'a', encoding='utf-8') as file:
+            with open('./combos/' + domains[domain] + '_COMBOS' + '.txt', 'a', encoding='utf-8') as file:
                 file.write(combo + '\n')
 
 # Runs main function with multiprocessing (+ shows how long it took)
